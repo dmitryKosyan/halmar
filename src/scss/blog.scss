@@ -1,0 +1,152 @@
+@import 'blocks/_global';
+@import 'blocks/_reset';
+@import 'blocks/_vars';
+
+
+
+.blog {
+    &-wrapper {
+        display: flex;
+        gap: 50px;
+        margin: 50px 0;
+    }
+
+    &__item-img {
+        width: 180px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    &-aside {
+        width: 250px;
+        padding: 0 10px;
+    }
+
+    &-aside__link {
+        cursor: pointer;
+        color: $black;
+    }
+
+    &-aside__items {
+        margin-bottom: 30px;
+    }
+
+    &-aside__title {
+        margin-top: 10px;
+        font-family: 'Raleway';
+        font-size: 16px;
+        width: 180px;
+    }
+
+    &__main {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    &__item-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-size: 22px;
+        color: $black;
+        margin: 10px 0;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-size: 16px;
+        color: $black;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+}
+
+.blogs {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 59px 0 59px;
+
+    }
+
+    &__items {
+        width: 580px;
+
+    }
+
+
+
+    &__item-img {
+        width: 600px;
+        object-fit: cover;
+        height: 430px;
+        margin-bottom: 25px;
+    }
+
+    &__items-link {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+        margin-bottom: 9px;
+    }
+
+
+
+    &__title-one {
+        font-family: 'Raleway';
+        color: $black;
+        font-size: 24px;
+        line-height: 38px;
+        margin-bottom: 6px;
+    }
+
+    &__text-one {
+        color: #5A5A5A;
+        font-family: 'Raleway';
+        line-height: 24px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:630px) {
+    .blog {
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &-wrapper {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-aside {
+            max-width: 635px;
+            width: 100%;
+        }
+
+        &-aside__title {
+            width: 100%;
+        }
+
+        &__item-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

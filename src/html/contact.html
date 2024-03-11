@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>contact</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('blocks/header.html')
+        <main class="main">
+            <a class="main__page" href="../index.html">главная</a>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../index.html">главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../disaer/gallery.html">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17834.40049241905!2d-122.41772293188816!3d37.79692029750514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580e839d7e541%3A0xf89b6220c55337a7!2zR3JlZW4gU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTMzLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1677215010734!5m2!1sru!2sby"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <section class="contact">
+                <div class="container">
+                    <h3 class="contact__title">Contact Us</h3>
+                    <div class="contact__inner">
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <a class="contact__link" href="#">
+                                    <img class="contact__link-img" src="../images/facebook.svg" alt="img">
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="#">
+                                    <img class="contact__link-img" src="../images/instagram.svg" alt="img">
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="#">
+                                    <img class="contact__link-img" src="../images/Pinterest.svg" alt="img">
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="#">
+                                    <img class="contact__link-img" src="../images/whatsapp.svg" alt="img">
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="#">
+                                    <img class="contact__link-img" src="../images/youtube.svg" alt="img">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="contact__adress">
+                            <a class="contact__phone " href="tel:+14158297934">+48 660 887 000</a>
+                            <div class="contact__st">37-450 Stalowa Wola</div>
+                            <div class="contact__city">Centralnego Okręgu Przemysłowego 2</div>
+                            <a class="contact__email" href="mailto: ouremailaddress@email.com">
+                                Hurtownia@halmar.pl</a>
+                        </div>
+                        <form class="contact__form">
+                            <div class="contact__form-box">
+                                <input class="contact__form-input" type="text" placeholder="Ваше имя">
+                                <input class="contact__form-input" type="email" placeholder="Ваш e-mail">
+                            </div>
+                            <textarea class="contact__form-area" placeholder="Ваше сообщение"></textarea>
+                            <button class="contact__form-btn" type="submit">отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+    </div>
+    </main>
+    @@include('blocks/footer.html')
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/general.bundle.js"></script>
+</body>
+
+</html>

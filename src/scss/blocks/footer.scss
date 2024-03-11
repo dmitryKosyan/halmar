@@ -1,0 +1,245 @@
+.footer__top {
+    background-color: #DFDFDF;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 61px 0 61px 0;
+}
+
+.footer__contacts {
+    width: 539px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+
+    &-title {
+        font-family: 'Raleway';
+        font-size: 16px;
+        line-height: 23px;
+        color: $black;
+        margin-bottom: 14px;
+
+    }
+
+    &-link {
+        font-family: 'Raleway';
+        font-size: 16px;
+        line-height: 27px;
+        color: #5a5a5a;
+    }
+
+    &-box {
+        width: 454px;
+        margin-bottom: 16px;
+    }
+
+    &-text {
+        font-family: 'Raleway';
+        font-size: 16px;
+        line-height: 27px;
+        color: #5A5A5A;
+    }
+
+
+
+
+    &-input {
+        font-family: 'Raleway';
+        font-size: 14px;
+        width: 368px;
+        border: 1px solid rgba($black, .7);
+        border-radius: 21px;
+        padding: 6px 10px 6px 18px;
+        background-color: transparent;
+    }
+
+    &-btn {
+        font-family: 'Raleway';
+        border: none;
+        background-color: $black;
+        padding: 6px 12px 6px 12px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        border-radius: 21px;
+        width: 136px;
+        margin-left: 9px;
+        color: #FFFFF0;
+        cursor: pointer;
+    }
+}
+
+.footer__sociale {
+    width: 125px;
+    margin-left: 99px;
+
+    &-item {
+        margin-bottom: 15px;
+    }
+
+    &-link {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+        padding-left: 30px;
+        position: relative;
+
+
+        &::before {
+
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+    }
+
+    .footer__sociale-link--one::before {
+        background-image: url('../images/facebook.svg');
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer__sociale-link--two::before {
+        background-image: url('../images/instagram.svg');
+        width: 14px;
+        height: 15px;
+    }
+
+    .footer__sociale-link--free::before {
+        background-image: url('../images/Pinterest.svg');
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer__sociale-link--fuor::before {
+        background-image: url('../images/whatsapp.svg');
+        width: 14px;
+        height: 14px;
+    }
+
+    .footer__sociale-link--five::before {
+        background-image: url('../images/youtube.svg');
+        width: 18px;
+        height: 12px;
+    }
+}
+
+.footer__info {
+    margin-right: 87px;
+
+    &-item {
+        margin-bottom: 15px;
+    }
+
+    &-link {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+
+    }
+}
+
+
+.footer__copyrigth {
+    padding: 41px 0 42px 0;
+    background-color: $black;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #A1A1A1;
+}
+
+@media(max-width:996px) {
+    .footer {
+        &__contacts-input {
+            width: 265px;
+        }
+
+        &__inner {
+            justify-content: center;
+            gap: 100px;
+        }
+
+        &__sociale {
+            margin-left: 0;
+        }
+
+        &__info {
+            margin-right: 0;
+        }
+
+        &__contacts {
+            width: 420px;
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .footer {
+        &__inner {
+            gap: 60px;
+        }
+    }
+}
+
+@media (max-width:770px) {
+    .footer {
+        &__contacts {
+            width: 300px;
+        }
+
+        &__contacts-btn {
+            margin-left: 0;
+        }
+
+        &__contacts-input {
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width:630px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__contacts-btn {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            padding: 4px 8px;
+        }
+
+        &__contacts-input {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        &__contacts-link {
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__contacts-title {
+            text-align: center;
+        }
+    }
+}

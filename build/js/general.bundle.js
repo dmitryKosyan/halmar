@@ -1,0 +1,1 @@
+!function(){"use strict";(()=>{const e=document.querySelector(".header__btn-menu"),o=document.querySelector(".modal");e.addEventListener("click",(()=>{o.classList.toggle("open"),console.log(o)}))})(),gsap.timeline().fromTo(".menu__list li",{y:-50,opacity:0},{y:0,opacity:1,stagger:.15},.5).fromTo(".header__logo",{y:-50,opacity:0},{y:0,opacity:1,stagger:.15})}();
